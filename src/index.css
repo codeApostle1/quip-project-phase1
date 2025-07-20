@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-lightgreen: #A8E6CF;
+  --color-emerald: #34D399;
+  --color-darkgreen: #065F46;
+  --color-accent-peach: #FFDAB9;
+  --color-accent-coral: #FF6B6B;
+  --color-accent-yellow: #FACC15;
+  --color-accent-blue: #38BDF8;
+  --color-neutral-gray: #D1D5DB;
+  --color-skyblue: #E0F2FE;
+  --color-tailwindblue: #3B82F6;
+  --color-navy: #1E3A8A;
+}
+
+.nav-bottom-effect {
+  @apply relative after:absolute after:bottom-0 after:left-0 
+         after:w-0 after:h-[2px] after:bg-navy 
+         
+         hover:after:w-full after:transition-all after:duration-200;
+}
+
+li, button {
+  cursor: pointer;
+}
